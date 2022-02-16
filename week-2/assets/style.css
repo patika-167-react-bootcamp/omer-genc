@@ -1,0 +1,112 @@
+:root {
+  --theme-bg-color: rgba(16 18 27 / 40%);
+  --border-color: rgba(113 119 144 / 25%);
+  --theme-color: #f9fafb;
+  --inactive-color: rgb(113 119 144 / 78%);
+  --body-font: 'Poppins', sans-serif;
+}
+
+td,
+th {
+  color: var(--theme-color);
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html body {
+  font-family: 'Poppins', sans-serif;
+  background-attachment: fixed;
+  background-color: #f9f9fa;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.panel {
+  background-color: #f9f9fa31;
+  border-radius: 0.5rem;
+  box-shadow: 0px 3px 12px rgb(0 0 0 / 5%);
+}
+
+.bg-img {
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
+}
+
+.page-layout {
+  background-color: var(--theme-bg-color);
+  max-width: 1250px;
+  max-height: 860px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 14px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn:focus,
+.btn:active,
+input {
+  outline: none !important;
+  box-shadow: none;
+}
+
+.input-button {
+  background-color: #3a6df0;
+  border: none;
+  padding: 8px 26px;
+  color: #fff;
+  border-radius: 20px;
+  margin-top: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.panel input,
+.panel input:active,
+.panel input:focus,
+.panel select,
+.panel select:active .panel select:focus {
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px rgba(134, 140, 160, 0.02);
+  color: var(--theme-color);
+}
+
+option {
+  background-color: rgb(0, 0, 0);
+}
+
+input::placeholder {
+  color: var(--theme-color) !important;
+}
+
+.btn-custom {
+  background-color: var(--theme-color) !important;
+  color: var(--theme-bg-color);
+  border: 1px solid var(--theme-color) !important;
+}
+
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+  background-color: transparent !important;
+  color: var(--theme-color) !important;
+  text-decoration: underline !important;
+}
